@@ -11,7 +11,6 @@ Disclaimer: I work for **Kili**.
 
 # Table Of Content
 
-- [Table Of Content](#table-of-content)
 - [Asset types](#asset-types)
   - [Image](#image)
   - [Text](#text)
@@ -36,7 +35,7 @@ Task / tools available to annotate images.
 
 |               | Classification | Hierarchical classification | Bounding Box | Polygon | Polyline | Pose estimation | Point   |
 | ------------- | -------------- | --------------------------- | ------------ | ------- | -------- | --------------- | ------- |
-| **Appen**         | Yes        |                         | Yes      | Yes | Yes  |             | Yes |
+| **Appen**         | ✔        |                         | Yes      | Yes | Yes  |             | Yes |
 | **ClarifAI**      |            |                         | Yes      |     |      |             |     |
 | **CVAT**          |            |                         | Yes      | Yes | Yes  | Yes         | Yes |
 | **Dataloop**      | Yes        |                         | Yes      | Yes | Yes  | Yes         | Yes |
