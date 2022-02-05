@@ -18,25 +18,25 @@ I tried to be as accurate as possible, based on my experience with those solutio
 If you see any mistake (this is likely), please create an issue / push a PR.
 
 
-# Table Of Content
+# Table of Content
 
-- [Tasks / tools by asset type](#tasks-tools-by-asset-type)
+- [Tasks / Tools by Asset Type](#tasks--tools-by-asset-type)
   - [Image](#image)
   - [Text](#text)
   - [PDF](#pdf)
   - [Video](#video)
   - [Audio](#audio)
   - [Timeserie](#timeserie)
-- [Productivity Management](#productivity-management)
-- [Quality management](#quality-management)
-- [Dataset management](#dataset-management)
+- [Productivity Management Features](#productivity-management-features)
+- [Quality Management Features](#quality-management-features)
+- [Dataset Management Features](#dataset-management-features)
 - [API](#api)
 - [Deployment](#deployment)
 - [Automation](#automation)
 - [Workforce](#workforce)
 - [Security](#security)
 
-# Tasks / tools by asset type
+# Tasks / Tools by Asset Type
 
 ## Image
 
@@ -101,31 +101,43 @@ The criteria are as follows:
 
 ## Text
 
-Task / tools available to annotate texts.
+The criteria are as follows:
 
-|               |         | Classification | Hierarchical classification | Named entities recognition | Relations extraction | Consensus Text |
-| ------------- | ------- | -------------- | --------------------------- | -------------------------- | -------------------- | -------------- |
-| **Appen**         | ✔ |            | ✔                     |                        |                  |
-| **ClarifAI**      | ✔ |            | ✔                     |                        |                  |
-| **CVAT**          |     |            |                         |                        |                  |
-| **Dataloop**      | ✔ |            | ✔                     | ✔                    |                  |
-| **Hasty**         |     |            |                         |                        |                  |
-| **Hive**          | ✔ |            | ✔                     |                        |                  |
-| **Innotescus**    |     |            |                         |                        |                  |
-| **Kili**          | ✔ | ✔        | ✔                     | ✔                    | ✔              |
-| **Labelbox**      | ✔ | ✔        | ✔                     | ✔                    | ✔              |
-| **LabelStudio**   | ✔ | ✔        | ✔                     | ✔                    | ✔              |
-| **Playment**      |     |            |                         |                        |                  |
-| **Roboflow**      |     |            |                         |                        |                  |
-| **Scale**         |     |            |                         |                        |                  |
-| **Snorkel**       | ✔ |            | ✔                     | ✔                    |                  |
-| **SuperAnnotate** | ✔ |            | ✔                     |                        |                  |
-| **Supervisely**   |     |            |                         |                        |                  |
-| **V7**            | ✔ | ✔        | ✔                     |                        |                  |
+- Classification
+- Hierarchical classification 
+- Named entities recognition 
+- Relations extraction
+
+
+
+|               | Classification | Hierarchical classification | Named entities recognition | Relations extraction |
+| ------------- | ------- | -------------- | --------------------------- | -------------------------- |
+| **Appen**         | ✔ |            | ✔                     |                        |
+| **ClarifAI**      | ✔ |            | ✔                     |                        |
+| **CVAT**          |     |            |                         |                        |
+| **Dataloop**      | ✔ |            | ✔                     | ✔                    |
+| **Hasty**         |     |            |                         |                        |
+| **Hive**          | ✔ |            | ✔                     |                        |
+| **Innotescus**    |     |            |                         |                        |
+| **Kili**          | ✔ | ✔        | ✔                     | ✔                    |
+| **Labelbox**      | ✔ | ✔        | ✔                     | ✔                    |
+| **LabelStudio**   | ✔ | ✔        | ✔                     | ✔                    |
+| **Playment**      |     |            |                         |                        |
+| **Roboflow**      |     |            |                         |                        |
+| **Scale**         |     |            |                         |                        |
+| **Snorkel**       | ✔ |            | ✔                     | ✔                    |
+| **SuperAnnotate** | ✔ |            | ✔                     |                        |
+| **Supervisely**   |     |            |                         |                        |
+| **V7**            | ✔ | ✔        | ✔                     |                        |
 
 ## PDF
 
-Task / tools available to annotate PDFs.
+The criteria are as follows:
+
+- PDF document processing
+- Bounding Box on PDF
+- Object relation
+
 
 |               | PDF document processing | Bounding Box on PDF | Object relation |
 | ------------- | ----------------------- | ------------------- | --------------- |
@@ -149,7 +161,15 @@ Task / tools available to annotate PDFs.
 
 ## Video
 
-Task / tools available to annotate videos.
+The criteria are as follows:
+
+- Classification
+- Hierarchical classification
+- Native Video/Frame
+- Classification
+- Object detection
+- Transcription
+
 
 |               | Classif. | Hierarchical classif. | Native Video/Frame | Classification | Object detection | Transcription |
 | ------------- | -------------- | --------------------------- | ------------------ | -------------- | ---------------- | ------------- |
@@ -173,7 +193,13 @@ Task / tools available to annotate videos.
 
 ## Audio
 
-Task / tools available to annotate audio files.
+The criteria are as follows:
+
+- Voice transcription / Speech to text
+- Diarization
+- Ultrasound support
+
+
 
 |               | Voice transcription / Speech to text | Diarization | Ultrasound support |
 | ------------- | ------------------------------------ | ----------- | ------------------ |
@@ -197,7 +223,11 @@ Task / tools available to annotate audio files.
 
 ## Timeserie
 
-Task / tools available to annotate timeseries.
+The criteria are as follows:
+
+- Classification
+- Range detection
+
 
 |               | Classification | Range detection |
 | ------------- | -------------- | --------------- |
@@ -219,9 +249,17 @@ Task / tools available to annotate timeseries.
 | **Supervisely**   |            |             |
 | **V7**            |            |             |
 
-# Productivity Management
+# Productivity Management Features
 
-How to accelerate the labeling process.
+The criteria are as follows:
+
+- Interface Customization
+- Asset preloading
+- Keyboard shortcuts / Hotkeys
+- Workload distribution
+- Autosave
+- Labeler productivity dashboard
+
 
 |               | Interface Customization | Asset preloading | Keyboard shortcuts / Hotkeys | Workload distribution | Autosave | Labeler productivity dashboard |
 | ------------- | ----------------------- | ---------------- | ---------------------------- | --------------------- | -------- | ------------------------------ |
@@ -243,33 +281,46 @@ How to accelerate the labeling process.
 | **Supervisely**   | ✔                 |              | ✔                      | ✔               | ✔  |                            |
 | **V7**            | ✔                 |              | ✔                      | ✔               |      | ✔                        |
 
-# Quality management
+# Quality Management Features
 
-How to make sure labels are consistent.
+The criteria are as follows:
 
-|               | Issue management | Consensus Image | Consensus Video | Consensus Audio |
-| ------------- | ---------------- | --------------- | --------------- | --------------- |
-| **Appen**         |              |             |             |             |
-| **ClarifAI**      |              | ✔         |             |             |
-| **CVAT**          |              |             |             |             |
-| **Dataloop**      | ✔          | ✔         |             |             |
-| **Hasty**         |              | ✔         |             |             |
-| **Hive**          |              |             |             |             |
-| **Innotescus**    |              | ✔         |             |             |
-| **Kili**          | ✔          | ✔         | ✔         |             |
-| **Labelbox**      | ✔          | ✔         |             |             |
-| **LabelStudio**   |              | ✔         | ✔         | ✔         |
-| **Playment**      |              |             |             |             |
-| **Roboflow**      | ✔          | ✔         |             |             |
-| **Scale**         |              |             |             |             |
-| **Snorkel**       |              |             |             |             |
-| **SuperAnnotate** | ✔          | ✔         |             |             |
-| **Supervisely**   | ✔          | ✔         |             |             |
-| **V7**            |              | ✔         |             |             |
+- Issue management
+- Consensus Image
+- Consensus Video
+- Consensus Text
+- Consensus Audio
 
-# Dataset management
 
-How to managed and export the dataset.
+|               | Issue management | Consensus Image | Consensus Video | Consensus Text | Consensus Audio |
+| ------------- | ---------------- | --------------- | --------------- | ------------------------- |---------- |
+| **Appen**         |              |             |             |                    |           |
+| **ClarifAI**      |              | ✔         |             |                    |           |
+| **CVAT**          |              |             |             |                    |           |
+| **Dataloop**      | ✔          | ✔         |             |                    |           |
+| **Hasty**         |              | ✔         |             |                    |           |
+| **Hive**          |              |             |             |                    |           |
+| **Innotescus**    |              | ✔         |             |                    |           |
+| **Kili**          | ✔          | ✔         | ✔         |   ✔              |           |
+| **Labelbox**      | ✔          | ✔         |             |   ✔              |           |
+| **LabelStudio**   |              | ✔         | ✔         | ✔              | ✔         |
+| **Playment**      |              |             |             |                    |           |
+| **Roboflow**      | ✔          | ✔         |             |                    |           |
+| **Scale**         |              |             |             |                    |           |
+| **Snorkel**       |              |             |             |                    |           |
+| **SuperAnnotate** | ✔          | ✔         |             |                    |           |
+| **Supervisely**   | ✔          | ✔         |             |                    |           |
+| **V7**            |              | ✔         |             |                    |           |
+
+# Dataset Management Features
+
+The criteria are as follows:
+
+- Data hub
+- Version control
+- Public project
+- ML export formats
+
 
 |               | Data hub | Version control | Public project | ML export formats |
 | ------------- | -------- | --------------- | -------------- | ----------------- |
@@ -293,7 +344,12 @@ How to managed and export the dataset.
 
 # API
 
-How to programmatically interact with the tool.
+How to programmatically interact with the tool. The criteria are as follows:
+
+- GraphQL API
+- Messaging bus API
+- CLI SDK
+- Python SDK
 
 |               | GraphQL API | Messaging bus API | CLI SDK | Python SDK |
 | ------------- | ----------- | ----------------- | ------- | ---------- |
@@ -317,7 +373,11 @@ How to programmatically interact with the tool.
 
 # Deployment
 
-The different options to deploy the tool.
+The different options to deploy the tool. The criteria are as follows:
+
+- On-premise data
+- On-premise deployment
+- Air gap deployment
 
 |               | On-premise data | On-premise deployment | Air gap deployment |
 | ------------- | --------------- | --------------------- | ------------------ |
@@ -341,7 +401,14 @@ The different options to deploy the tool.
 
 # Automation
 
-The offering in terms of labeling automation.
+The offering in terms of labeling automation. The criteria are as follows:
+
+- Model-assisted labeling
+- Model based preannotation
+- Queue prioritisation
+- Model Training
+- Model Inference
+
 
 |               | Model-assisted labeling | Model based preannotation | Queue prioritisation | Model Training | Model Inference |
 | ------------- | ----------------------- | ------------------------- | -------------------- | -------------- | --------------- |
@@ -365,7 +432,12 @@ The offering in terms of labeling automation.
 
 # Workforce
 
-Availability of workforce to help labeling
+Availability of workforce to help labeling. The criteria are as follows:
+
+- Human in the loop
+- External workforce
+- On-premise external workforce
+
 
 |               | Human in the loop | External workforce | On-premise external workforce |
 | ------------- | ----------------- | ------------------ | ----------------------------- |
@@ -389,7 +461,11 @@ Availability of workforce to help labeling
 
 # Security
 
-Security certificates.
+Security certifications. The criteria are as follows:
+
+- HIPAA Compliance
+- SOC 2 Compliance
+
 
 |               | HIPAA Compliance | SOC 2 Compliance |
 | ------------- | ---------------- | ---------------- |
