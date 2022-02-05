@@ -2,16 +2,25 @@
     <h1>Data Labeling Platforms Comparison</h1>
 </div>
 
+Data labeling is a hot topic as a recent report from AI research and advisory firm Cognilytica found that over 80% of the time enterprises spend on AI projects goes toward preparing, cleaning and labeling data.
+
+A new category of tools has emerged, called data labeling platforms, training data management platforms. Three years ago, this market did not exist. Today, the offer is plentiful and it is sometimes complicated to find one's way.
+
+A good annotation tool must meet three needs:
+
+- annotate quickly (productivity of annotators)
+- annotate well (control the quality / consistency of annotations)
+- annotate the right data (source diversity in the dataset)
+
 Here is an attempt to do a fair comparison of data labeling / training data platforms.
 
 I tried to be as accurate as possible, based on my experience with those solutions and their documentation.
 If you see any mistake (this is likely), please create an issue / push a PR.
 
-Disclaimer: I work for **Kili**.
 
 # Table Of Content
 
-- [Asset types](#asset-types)
+- [Tasks / tools by asset type](#tasks-tools-by-asset-type)
   - [Image](#image)
   - [Text](#text)
   - [PDF](#pdf)
@@ -27,58 +36,69 @@ Disclaimer: I work for **Kili**.
 - [Workforce](#workforce)
 - [Security](#security)
 
-# Asset types
+# Tasks / tools by asset type
 
 ## Image
 
-Tasks / tools available to annotate images:
+The criteria are as follows:
 
 - Classification
 - Hierarchical classification
 - Bounding Box
-
+- Bounding Box
+- Polygon
+- Polyline
+- Pose estimation
+- Point
+- Segmentation
+- Vector Segmentation
+- Image transcription / OCR
+- Object relation
+- Satellite imagery support
+- High-resolution support
+- DICOM support
 
 
 
 |               | Classif. | Hierarchical classif. | Bounding Box | Polygon | Polyline | Pose estimation | Point   |
 | ------------- | -------------- | --------------------------- | ------------ | ------- | -------- | --------------- | ------- |
-| **Appen**         | ✔        |                         | Yes      | Yes | Yes  |             | Yes |
-| **ClarifAI**      |            |                         | Yes      |     |      |             |     |
-| **CVAT**          |            |                         | Yes      | Yes | Yes  | Yes         | Yes |
-| **Dataloop**      | Yes        |                         | Yes      | Yes | Yes  | Yes         | Yes |
-| **Hasty**         | Yes        |                         | Yes      | Yes |      |             |     |
-| **Hive**          | Yes        |                         | Yes      | Yes | Yes  |             |     |
-| **Innotescus**    | Yes        |                         | Yes      |     |      |             |     |
-| **Kili**          | Yes        | Yes                     | Yes      | Yes | Yes  | Yes         | Yes |
-| **Labelbox**      | Yes        | Yes                     | Yes      | Yes | Yes  |             | Yes |
-| **LabelStudio**   | Yes        | Yes                     | Yes      | Yes | Yes  |             | Yes |
-| **Playment**      | Yes        |                         | Yes      | Yes | Yes  |             | Yes |
-| **Roboflow**      | Yes        |                         | Yes      |     |      |             |     |
-| **Scale**         |            |                         | Yes      | Yes | Yes  |             | Yes |
+| **Appen**         | ✔        |                         | ✔      | ✔ | ✔  |             | ✔ |
+| **ClarifAI**      |            |                         | ✔      |     |      |             |     |
+| **CVAT**          |            |                         | ✔      | ✔ | ✔  | ✔         | ✔ |
+| **Dataloop**      | ✔        |                         | ✔      | ✔ | ✔  | ✔         | ✔ |
+| **Hasty**         | ✔        |                         | ✔      | ✔ |      |             |     |
+| **Hive**          | ✔        |                         | ✔      | ✔ | ✔  |             |     |
+| **Innotescus**    | ✔        |                         | ✔      |     |      |             |     |
+| **Kili**          | ✔        | ✔                     | ✔      | ✔ | ✔  | ✔         | ✔ |
+| **Labelbox**      | ✔        | ✔                     | ✔      | ✔ | ✔  |             | ✔ |
+| **LabelStudio**   | ✔        | ✔                     | ✔      | ✔ | ✔  |             | ✔ |
+| **Playment**      | ✔        |                         | ✔      | ✔ | ✔  |             | ✔ |
+| **Roboflow**      | ✔        |                         | ✔      |     |      |             |     |
+| **Scale**         |            |                         | ✔      | ✔ | ✔  |             | ✔ |
 | **Snorkel**       |            |                         |          |     |      |             |     |
-| **SuperAnnotate** | Yes        |                         | Yes      | Yes | Yes  | Yes         | Yes |
-| **Supervisely**   | Yes        | Yes                     | Yes      | Yes | Yes  | Yes         | Yes |
-| **V7**            | Yes        | Yes                     | Yes      | Yes | Yes  | Yes         | Yes |
+| **SuperAnnotate** | ✔        |                         | ✔      | ✔ | ✔  | ✔         | ✔ |
+| **Supervisely**   | ✔        | ✔                     | ✔      | ✔ | ✔  | ✔         | ✔ |
+| **V7**            | ✔        | ✔                     | ✔      | ✔ | ✔  | ✔         | ✔ |
 
 |               | Seg. | Vector Seg. | Image transcription / OCR | Object relation | Satellite | High-resolution support | DICOM support |
 | ------------- | ------------ | ------------------- | ------------------------- | --------------- | --------- | ----------------------- | ------------- |
-| **Appen**         | Yes      |                 |                       |             |       |                     |           |
-| **ClarifAI**      | Yes      |                 | Yes                   |             |       |                     |           |
+| **Appen**         | ✔      |                 |                       |             |       |                     |           |
+| **ClarifAI**      | ✔      |                 | ✔                   |             |       |                     |           |
 | **CVAT**          |          |                 |                       |             |       |                     |           |
-| **Dataloop**      | Yes      |                 | Yes                   |             |       |                     |           |
-| **Hasty**         | Yes      |                 |                       |             |       |                     |           |
-| **Hive**          | Yes      |                 | Yes                   |             |       |                     |           |
-| **Innotescus**    | Yes      |                 |                       |             |       |                     |           |
-| **Kili**          | Yes      | Yes             | Yes                   | Yes         |       | Yes                 | Yes       |
-| **Labelbox**      | Yes      |                 | Yes                   |             | Yes   |                     |           |
-| **LabelStudio**   | Yes      |                 | Yes                   | Yes         |       | Yes                 | Yes       |
-| **Playment**      | Yes      |                 |                       |             |       |                     |           |
+| **Dataloop**      | ✔      |                 | ✔                   |             |       |                     |           |
+| **Hasty**         | ✔      |                 |                       |             |       |                     |           |
+| **Hive**          | ✔      |                 | ✔                   |             |       |                     |           |
+| **Innotescus**    | ✔      |                 |                       |             |       |                     |           |
+| **Kili**          | ✔      | ✔             | ✔                   | ✔         |       | ✔                 | ✔       |
+| **Labelbox**      | ✔      |                 | ✔                   |             | ✔   |                     |           |
+| **LabelStudio**   | ✔      |                 | ✔                   | ✔         |       | ✔                 | ✔       |
+| **Playment**      | ✔      |                 |                       |             |       |                     |           |
 | **Roboflow**      |          |                 |                       |             |       |                     |           |
-| **Scale**         | Yes      |                 |                       |             |       |                     |           |
+| **Scale**         | ✔      |                 |                       |             |       |                     |           |
 | **Snorkel**       |          |                 |                       |             |       |                     |           |
-| **SuperAnnotate** | Yes      |                 |                       |             |       |                     | Yes       |
-| **Supervisely**   | Yes      |                 |                       |             |       |                     |           |
-| **V7**            | Yes      | Yes             | Yes                   |             |       | Yes                 | Yes       |
+| **SuperAnnotate** | ✔      |                 |                       |             |       |                     | ✔       |
+| **Supervisely**   | ✔      |                 |                       |             |       |                     |           |
+| **V7**            | ✔      | ✔             | ✔                   |             |       | ✔                 | ✔       |
 
 ## Text
 
@@ -86,23 +106,23 @@ Task / tools available to annotate texts.
 
 |               |         | Classification | Hierarchical classification | Named entities recognition | Relations extraction | Consensus Text |
 | ------------- | ------- | -------------- | --------------------------- | -------------------------- | -------------------- | -------------- |
-| **Appen**         | Yes |            | Yes                     |                        |                  |
-| **ClarifAI**      | Yes |            | Yes                     |                        |                  |
+| **Appen**         | ✔ |            | ✔                     |                        |                  |
+| **ClarifAI**      | ✔ |            | ✔                     |                        |                  |
 | **CVAT**          |     |            |                         |                        |                  |
-| **Dataloop**      | Yes |            | Yes                     | Yes                    |                  |
+| **Dataloop**      | ✔ |            | ✔                     | ✔                    |                  |
 | **Hasty**         |     |            |                         |                        |                  |
-| **Hive**          | Yes |            | Yes                     |                        |                  |
+| **Hive**          | ✔ |            | ✔                     |                        |                  |
 | **Innotescus**    |     |            |                         |                        |                  |
-| **Kili**          | Yes | Yes        | Yes                     | Yes                    | Yes              |
-| **Labelbox**      | Yes | Yes        | Yes                     | Yes                    | Yes              |
-| **LabelStudio**   | Yes | Yes        | Yes                     | Yes                    | Yes              |
+| **Kili**          | ✔ | ✔        | ✔                     | ✔                    | ✔              |
+| **Labelbox**      | ✔ | ✔        | ✔                     | ✔                    | ✔              |
+| **LabelStudio**   | ✔ | ✔        | ✔                     | ✔                    | ✔              |
 | **Playment**      |     |            |                         |                        |                  |
 | **Roboflow**      |     |            |                         |                        |                  |
 | **Scale**         |     |            |                         |                        |                  |
-| **Snorkel**       | Yes |            | Yes                     | Yes                    |                  |
-| **SuperAnnotate** | Yes |            | Yes                     |                        |                  |
+| **Snorkel**       | ✔ |            | ✔                     | ✔                    |                  |
+| **SuperAnnotate** | ✔ |            | ✔                     |                        |                  |
 | **Supervisely**   |     |            |                         |                        |                  |
-| **V7**            | Yes | Yes        | Yes                     |                        |                  |
+| **V7**            | ✔ | ✔        | ✔                     |                        |                  |
 
 ## PDF
 
@@ -115,42 +135,42 @@ Task / tools available to annotate PDFs.
 | **CVAT**          |                     |                 |             |
 | **Dataloop**      |                     |                 |             |
 | **Hasty**         |                     |                 |             |
-| **Hive**          | Yes                 | Yes             |             |
+| **Hive**          | ✔                 | ✔             |             |
 | **Innotescus**    |                     |                 |             |
-| **Kili**          | Yes                 | Yes             | Yes         |
-| **Labelbox**      | Yes                 |                 |             |
-| **LabelStudio**   |                     |                 | Yes         |
+| **Kili**          | ✔                 | ✔             | ✔         |
+| **Labelbox**      | ✔                 |                 |             |
+| **LabelStudio**   |                     |                 | ✔         |
 | **Playment**      |                     |                 |             |
 | **Roboflow**      |                     |                 |             |
-| **Scale**         | Yes                 |                 |             |
-| **Snorkel**       | Yes                 |                 |             |
+| **Scale**         | ✔                 |                 |             |
+| **Snorkel**       | ✔                 |                 |             |
 | **SuperAnnotate** |                     |                 |             |
 | **Supervisely**   |                     |                 |             |
-| **V7**            | Yes                 |                 |             |
+| **V7**            | ✔                 |                 |             |
 
 ## Video
 
 Task / tools available to annotate videos.
 
-|               | Classification | Hierarchical classification | Native Video/Frame | Classification | Object detection | Transcription |
+|               | Classif. | Hierarchical classif. | Native Video/Frame | Classification | Object detection | Transcription |
 | ------------- | -------------- | --------------------------- | ------------------ | -------------- | ---------------- | ------------- |
-| **Appen**         | Yes        |                         | Yes            | Yes        | Yes          |
-| **ClarifAI**      |            |                         | Yes            | Yes        |              |
-| **CVAT**          |            |                         |                | Yes        |              |
-| **Dataloop**      | Yes        |                         | Yes            | Yes        |              |
+| **Appen**         | ✔        |                         | ✔            | ✔        | ✔          |
+| **ClarifAI**      |            |                         | ✔            | ✔        |              |
+| **CVAT**          |            |                         |                | ✔        |              |
+| **Dataloop**      | ✔        |                         | ✔            | ✔        |              |
 | **Hasty**         |            |                         |                |            |              |
-| **Hive**          | Yes        |                         | Yes            | Yes        | Yes          |
-| **Innotescus**    | Yes        |                         | Yes            | Yes        |              |
-| **Kili**          | Yes        | Yes                     | Yes            | Yes        |              |
-| **Labelbox**      | Yes        | Yes                     | Yes            | Yes        |              |
-| **LabelStudio**   | Yes        | Yes                     | Yes            | Yes        | Yes          |
-| **Playment**      | Yes        |                         |                | Yes        |              |
+| **Hive**          | ✔        |                         | ✔            | ✔        | ✔          |
+| **Innotescus**    | ✔        |                         | ✔            | ✔        |              |
+| **Kili**          | ✔        | ✔                     | ✔            | ✔        |              |
+| **Labelbox**      | ✔        | ✔                     | ✔            | ✔        |              |
+| **LabelStudio**   | ✔        | ✔                     | ✔            | ✔        | ✔          |
+| **Playment**      | ✔        |                         |                | ✔        |              |
 | **Roboflow**      |            |                         |                |            |              |
-| **Scale**         |            |                         |                | Yes        |              |
+| **Scale**         |            |                         |                | ✔        |              |
 | **Snorkel**       |            |                         |                |            |              |
-| **SuperAnnotate** | Yes        |                         | Yes            | Yes        | Yes          |
-| **Supervisely**   | Yes        |                         | Yes            | Yes        |              |
-| **V7**            | Yes        | Yes                     | Yes            | Yes        |              |
+| **SuperAnnotate** | ✔        |                         | ✔            | ✔        | ✔          |
+| **Supervisely**   | ✔        |                         | ✔            | ✔        |              |
+| **V7**            | ✔        | ✔                     | ✔            | ✔        |              |
 
 ## Audio
 
@@ -158,16 +178,16 @@ Task / tools available to annotate audio files.
 
 |               | Voice transcription / Speech to text | Diarization | Ultrasound support |
 | ------------- | ------------------------------------ | ----------- | ------------------ |
-| **Appen**         | Yes                              |         |                |
+| **Appen**         | ✔                              |         |                |
 | **ClarifAI**      |                                  |         |                |
 | **CVAT**          |                                  |         |                |
 | **Dataloop**      |                                  |         |                |
 | **Hasty**         |                                  |         |                |
-| **Hive**          | Yes                              | Yes     |                |
+| **Hive**          | ✔                              | ✔     |                |
 | **Innotescus**    |                                  |         |                |
-| **Kili**          | Yes                              | Yes     |                |
-| **Labelbox**      | Yes                              |         |                |
-| **LabelStudio**   | Yes                              |         |                |
+| **Kili**          | ✔                              | ✔     |                |
+| **Labelbox**      | ✔                              |         |                |
+| **LabelStudio**   | ✔                              |         |                |
 | **Playment**      |                                  |         |                |
 | **Roboflow**      |                                  |         |                |
 | **Scale**         |                                  |         |                |
@@ -189,13 +209,13 @@ Task / tools available to annotate timeseries.
 | **Hasty**         |            |             |
 | **Hive**          |            |             |
 | **Innotescus**    |            |             |
-| **Kili**          | Yes        | Yes         |
+| **Kili**          | ✔        | ✔         |
 | **Labelbox**      |            |             |
-| **LabelStudio**   | Yes        | Yes         |
+| **LabelStudio**   | ✔        | ✔         |
 | **Playment**      |            |             |
 | **Roboflow**      |            |             |
 | **Scale**         |            |             |
-| **Snorkel**       | Yes        | Yes         |
+| **Snorkel**       | ✔        | ✔         |
 | **SuperAnnotate** |            |             |
 | **Supervisely**   |            |             |
 | **V7**            |            |             |
@@ -207,22 +227,22 @@ How to accelerate the labeling process.
 |               | Interface Customization | Asset preloading | Keyboard shortcuts / Hotkeys | Workload distribution | Autosave | Labeler productivity dashboard |
 | ------------- | ----------------------- | ---------------- | ---------------------------- | --------------------- | -------- | ------------------------------ |
 | **Appen**         |                     |              |                          |                   |      |                            |
-| **ClarifAI**      |                     |              | Yes                      |                   |      |                            |
-| **CVAT**          | Yes                 |              | Yes                      |                   | Yes  |                            |
-| **Dataloop**      |                     |              | Yes                      | Yes               |      | Yes                        |
-| **Hasty**         |                     |              | Yes                      |                   |      |                            |
-| **Hive**          |                     |              | Yes                      |                   |      | Yes                        |
-| **Innotescus**    |                     |              | Yes                      |                   |      | Yes                        |
-| **Kili**          | Yes                 | Yes          | Yes                      | Yes               | Yes  | Yes                        |
-| **Labelbox**      | Yes                 |              | Yes                      |                   | Yes  | Yes                        |
-| **LabelStudio**   | Yes                 |              | Yes                      | Yes               |      | Yes                        |
-| **Playment**      |                     |              | Yes                      | Yes               |      |                            |
-| **Roboflow**      |                     |              | Yes                      |                   | Yes  |                            |
+| **ClarifAI**      |                     |              | ✔                      |                   |      |                            |
+| **CVAT**          | ✔                 |              | ✔                      |                   | ✔  |                            |
+| **Dataloop**      |                     |              | ✔                      | ✔               |      | ✔                        |
+| **Hasty**         |                     |              | ✔                      |                   |      |                            |
+| **Hive**          |                     |              | ✔                      |                   |      | ✔                        |
+| **Innotescus**    |                     |              | ✔                      |                   |      | ✔                        |
+| **Kili**          | ✔                 | ✔          | ✔                      | ✔               | ✔  | ✔                        |
+| **Labelbox**      | ✔                 |              | ✔                      |                   | ✔  | ✔                        |
+| **LabelStudio**   | ✔                 |              | ✔                      | ✔               |      | ✔                        |
+| **Playment**      |                     |              | ✔                      | ✔               |      |                            |
+| **Roboflow**      |                     |              | ✔                      |                   | ✔  |                            |
 | **Scale**         |                     |              |                          |                   |      |                            |
-| **Snorkel**       |                     |              | Yes                      |                   |      |                            |
-| **SuperAnnotate** |                     |              | Yes                      | Yes               | Yes  | Yes                        |
-| **Supervisely**   | Yes                 |              | Yes                      | Yes               | Yes  |                            |
-| **V7**            | Yes                 |              | Yes                      | Yes               |      | Yes                        |
+| **Snorkel**       |                     |              | ✔                      |                   |      |                            |
+| **SuperAnnotate** |                     |              | ✔                      | ✔               | ✔  | ✔                        |
+| **Supervisely**   | ✔                 |              | ✔                      | ✔               | ✔  |                            |
+| **V7**            | ✔                 |              | ✔                      | ✔               |      | ✔                        |
 
 # Quality management
 
@@ -231,22 +251,22 @@ How to make sure labels are consistent.
 |               | Issue management | Consensus Image | Consensus Video | Consensus Audio |
 | ------------- | ---------------- | --------------- | --------------- | --------------- |
 | **Appen**         |              |             |             |             |
-| **ClarifAI**      |              | Yes         |             |             |
+| **ClarifAI**      |              | ✔         |             |             |
 | **CVAT**          |              |             |             |             |
-| **Dataloop**      | Yes          | Yes         |             |             |
-| **Hasty**         |              | Yes         |             |             |
+| **Dataloop**      | ✔          | ✔         |             |             |
+| **Hasty**         |              | ✔         |             |             |
 | **Hive**          |              |             |             |             |
-| **Innotescus**    |              | Yes         |             |             |
-| **Kili**          | Yes          | Yes         | Yes         |             |
-| **Labelbox**      | Yes          | Yes         |             |             |
-| **LabelStudio**   |              | Yes         | Yes         | Yes         |
+| **Innotescus**    |              | ✔         |             |             |
+| **Kili**          | ✔          | ✔         | ✔         |             |
+| **Labelbox**      | ✔          | ✔         |             |             |
+| **LabelStudio**   |              | ✔         | ✔         | ✔         |
 | **Playment**      |              |             |             |             |
-| **Roboflow**      | Yes          | Yes         |             |             |
+| **Roboflow**      | ✔          | ✔         |             |             |
 | **Scale**         |              |             |             |             |
 | **Snorkel**       |              |             |             |             |
-| **SuperAnnotate** | Yes          | Yes         |             |             |
-| **Supervisely**   | Yes          | Yes         |             |             |
-| **V7**            |              | Yes         |             |             |
+| **SuperAnnotate** | ✔          | ✔         |             |             |
+| **Supervisely**   | ✔          | ✔         |             |             |
+| **V7**            |              | ✔         |             |             |
 
 # Dataset management
 
@@ -254,23 +274,23 @@ How to managed and export the dataset.
 
 |               | Data hub | Version control | Public project | ML export formats |
 | ------------- | -------- | --------------- | -------------- | ----------------- |
-| **Appen**         |      |             |            | Yes           |
+| **Appen**         |      |             |            | ✔           |
 | **ClarifAI**      |      |             |            |               |
-| **CVAT**          |      |             |            | Yes           |
-| **Dataloop**      | Yes  | Yes         |            | Yes           |
-| **Hasty**         |      |             |            | Yes           |
+| **CVAT**          |      |             |            | ✔           |
+| **Dataloop**      | ✔  | ✔         |            | ✔           |
+| **Hasty**         |      |             |            | ✔           |
 | **Hive**          |      |             |            |               |
 | **Innotescus**    |      |             |            |               |
-| **Kili**          | Yes  | Yes         | Yes        | Yes           |
+| **Kili**          | ✔  | ✔         | ✔        | ✔           |
 | **Labelbox**      |      |             |            |               |
-| **LabelStudio**   |      |             |            | Yes           |
-| **Playment**      |      |             |            | Yes           |
-| **Roboflow**      | Yes  | Yes         |            | Yes           |
-| **Scale**         |      |             |            | Yes           |
+| **LabelStudio**   |      |             |            | ✔           |
+| **Playment**      |      |             |            | ✔           |
+| **Roboflow**      | ✔  | ✔         |            | ✔           |
+| **Scale**         |      |             |            | ✔           |
 | **Snorkel**       |      |             |            |               |
-| **SuperAnnotate** |      |             |            | Yes           |
-| **Supervisely**   |      |             |            | Yes           |
-| **V7**            | Yes  | Yes         |            | Yes           |
+| **SuperAnnotate** |      |             |            | ✔           |
+| **Supervisely**   |      |             |            | ✔           |
+| **V7**            | ✔  | ✔         |            | ✔           |
 
 # API
 
@@ -279,22 +299,22 @@ How to programmatically interact with the tool.
 |               | GraphQL API | Messaging bus API | CLI SDK | Python SDK |
 | ------------- | ----------- | ----------------- | ------- | ---------- |
 | **Appen**         |         |               |     |        |
-| **ClarifAI**      |         |               |     | Yes    |
+| **ClarifAI**      |         |               |     | ✔    |
 | **CVAT**          |         |               |     |        |
-| **Dataloop**      |         |               |     | Yes    |
+| **Dataloop**      |         |               |     | ✔    |
 | **Hasty**         |         |               |     |        |
-| **Hive**          |         |               |     | Yes    |
+| **Hive**          |         |               |     | ✔    |
 | **Innotescus**    |         |               |     |        |
-| **Kili**          | Yes     | Yes           |     | Yes    |
-| **Labelbox**      | Yes     |               |     | Yes    |
-| **LabelStudio**   |         |               |     | Yes    |
-| **Playment**      |         |               |     | Yes    |
-| **Roboflow**      |         |               |     | Yes    |
-| **Scale**         |         |               |     | Yes    |
+| **Kili**          | ✔     | ✔           |     | ✔    |
+| **Labelbox**      | ✔     |               |     | ✔    |
+| **LabelStudio**   |         |               |     | ✔    |
+| **Playment**      |         |               |     | ✔    |
+| **Roboflow**      |         |               |     | ✔    |
+| **Scale**         |         |               |     | ✔    |
 | **Snorkel**       |         |               |     |        |
-| **SuperAnnotate** |         |               |     | Yes    |
-| **Supervisely**   |         |               |     | Yes    |
-| **V7**            |         |               | Yes | Yes    |
+| **SuperAnnotate** |         |               |     | ✔    |
+| **Supervisely**   |         |               |     | ✔    |
+| **V7**            |         |               | ✔ | ✔    |
 
 # Deployment
 
@@ -303,21 +323,21 @@ The different options to deploy the tool.
 |               | On-premise data | On-premise deployment | Air gap deployment |
 | ------------- | --------------- | --------------------- | ------------------ |
 | **Appen**         |             |                   |                |
-| **ClarifAI**      |             | Yes               | Yes            |
-| **CVAT**          |             | Yes               | Yes            |
-| **Dataloop**      |             | Yes               |                |
+| **ClarifAI**      |             | ✔               | ✔            |
+| **CVAT**          |             | ✔               | ✔            |
+| **Dataloop**      |             | ✔               |                |
 | **Hasty**         |             |                   |                |
 | **Hive**          |             |                   |                |
 | **Innotescus**    |             |                   |                |
-| **Kili**          | Yes         | Yes               | Yes            |
-| **Labelbox**      | Yes         | Yes               |                |
-| **LabelStudio**   |             | Yes               | Yes            |
+| **Kili**          | ✔         | ✔               | ✔            |
+| **Labelbox**      | ✔         | ✔               |                |
+| **LabelStudio**   |             | ✔               | ✔            |
 | **Playment**      |             |                   |                |
-| **Roboflow**      |             | Yes               |                |
+| **Roboflow**      |             | ✔               |                |
 | **Scale**         |             |                   |                |
-| **Snorkel**       |             | Yes               |                |
+| **Snorkel**       |             | ✔               |                |
 | **SuperAnnotate** |             |                   |                |
-| **Supervisely**   |             | Yes               |                |
+| **Supervisely**   |             | ✔               |                |
 | **V7**            |             |                   |                |
 
 # Automation
@@ -326,23 +346,23 @@ The offering in terms of labeling automation.
 
 |               | Model-assisted labeling | Model based preannotation | Queue prioritisation | Model Training | Model Inference |
 | ------------- | ----------------------- | ------------------------- | -------------------- | -------------- | --------------- |
-| **Appen**         | Yes                 | Yes                   |                  | Yes        |             |
-| **ClarifAI**      | Yes                 | Yes                   | Yes              |            |             |
+| **Appen**         | ✔                 | ✔                   |                  | ✔        |             |
+| **ClarifAI**      | ✔                 | ✔                   | ✔              |            |             |
 | **CVAT**          |                     |                       |                  |            |             |
-| **Dataloop**      | Yes                 | Yes                   |                  |            |             |
-| **Hasty**         | Yes                 | Yes                   |                  | Yes        | Yes         |
+| **Dataloop**      | ✔                 | ✔                   |                  |            |             |
+| **Hasty**         | ✔                 | ✔                   |                  | ✔        | ✔         |
 | **Hive**          |                     |                       |                  |            |             |
-| **Innotescus**    | Yes                 |                       |                  |            |             |
-| **Kili**          | Yes                 | Yes                   | Yes              | Yes        |             |
-| **Labelbox**      | Yes                 | Yes                   | Yes              |            |             |
-| **LabelStudio**   |                     | Yes                   |                  |            |             |
-| **Playment**      | Yes                 |                       |                  |            |             |
-| **Roboflow**      | Yes                 |                       |                  | Yes        | Yes         |
-| **Scale**         | Yes                 | Yes                   |                  |            |             |
-| **Snorkel**       | Yes                 |                       |                  | Yes        | Yes         |
-| **SuperAnnotate** | Yes                 | Yes                   |                  | Yes        |             |
-| **Supervisely**   | Yes                 | Yes                   |                  |            |             |
-| **V7**            | Yes                 |                       |                  | Yes        | Yes         |
+| **Innotescus**    | ✔                 |                       |                  |            |             |
+| **Kili**          | ✔                 | ✔                   | ✔              | ✔        |             |
+| **Labelbox**      | ✔                 | ✔                   | ✔              |            |             |
+| **LabelStudio**   |                     | ✔                   |                  |            |             |
+| **Playment**      | ✔                 |                       |                  |            |             |
+| **Roboflow**      | ✔                 |                       |                  | ✔        | ✔         |
+| **Scale**         | ✔                 | ✔                   |                  |            |             |
+| **Snorkel**       | ✔                 |                       |                  | ✔        | ✔         |
+| **SuperAnnotate** | ✔                 | ✔                   |                  | ✔        |             |
+| **Supervisely**   | ✔                 | ✔                   |                  |            |             |
+| **V7**            | ✔                 |                       |                  | ✔        | ✔         |
 
 # Workforce
 
@@ -350,19 +370,19 @@ Availability of workforce to help labeling
 
 |               | Human in the loop | External workforce | On-premise external workforce |
 | ------------- | ----------------- | ------------------ | ----------------------------- |
-| **Appen**         |               | Yes            |                           |
+| **Appen**         |               | ✔            |                           |
 | **ClarifAI**      |               |                |                           |
 | **CVAT**          |               |                |                           |
 | **Dataloop**      |               |                |                           |
 | **Hasty**         |               |                |                           |
 | **Hive**          |               |                |                           |
 | **Innotescus**    |               |                |                           |
-| **Kili**          | Yes           | Yes            | Yes                       |
-| **Labelbox**      |               | Yes            |                           |
+| **Kili**          | ✔           | ✔            | ✔                       |
+| **Labelbox**      |               | ✔            |                           |
 | **LabelStudio**   |               |                |                           |
 | **Playment**      |               |                |                           |
 | **Roboflow**      |               |                |                           |
-| **Scale**         |               | Yes            |                           |
+| **Scale**         |               | ✔            |                           |
 | **Snorkel**       |               |                |                           |
 | **SuperAnnotate** |               |                |                           |
 | **Supervisely**   |               |                |                           |
@@ -374,20 +394,20 @@ Security certificates.
 
 |               | HIPAA Compliance | SOC 2 Compliance |
 | ------------- | ---------------- | ---------------- |
-| **Appen**         | Yes          | Yes          |
-| **ClarifAI**      | Yes          | Yes          |
+| **Appen**         | ✔          | ✔          |
+| **ClarifAI**      | ✔          | ✔          |
 | **CVAT**          |              |              |
-| **Dataloop**      |              | Yes          |
+| **Dataloop**      |              | ✔          |
 | **Hasty**         |              |              |
 | **Hive**          |              |              |
 | **Innotescus**    |              |              |
-| **Kili**          |              | Yes          |
-| **Labelbox**      | Yes          | Yes          |
+| **Kili**          |              | ✔          |
+| **Labelbox**      | ✔          | ✔          |
 | **LabelStudio**   |              |              |
-| **Playment**      |              | Yes          |
-| **Roboflow**      | Yes          | Yes          |
-| **Scale**         | Yes          | Yes          |
+| **Playment**      |              | ✔          |
+| **Roboflow**      | ✔          | ✔          |
+| **Scale**         | ✔          | ✔          |
 | **Snorkel**       |              |              |
 | **SuperAnnotate** |              |              |
 | **Supervisely**   |              |              |
-| **V7**            | Yes          | Yes          |
+| **V7**            | ✔          | ✔          |
