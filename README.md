@@ -31,9 +31,16 @@ Disclaimer: I work for **Kili**.
 
 ## Image
 
-Task / tools available to annotate images.
+Tasks / tools available to annotate images:
 
-|               | Classification | Hierarchical classification | Bounding Box | Polygon | Polyline | Pose estimation | Point   |
+- Classification
+- Hierarchical classification
+- Bounding Box
+
+
+
+
+|               | Classif. | Hierarchical classif. | Bounding Box | Polygon | Polyline | Pose estimation | Point   |
 | ------------- | -------------- | --------------------------- | ------------ | ------- | -------- | --------------- | ------- |
 | **Appen**         | ✔        |                         | Yes      | Yes | Yes  |             | Yes |
 | **ClarifAI**      |            |                         | Yes      |     |      |             |     |
@@ -53,7 +60,7 @@ Task / tools available to annotate images.
 | **Supervisely**   | Yes        | Yes                     | Yes      | Yes | Yes  | Yes         | Yes |
 | **V7**            | Yes        | Yes                     | Yes      | Yes | Yes  | Yes         | Yes |
 
-|               | Segmentation | Vector Segmentation | Image transcription / OCR | Object relation | Satellite | High-resolution support | DICOM support |
+|               | Seg. | Vector Seg. | Image transcription / OCR | Object relation | Satellite | High-resolution support | DICOM support |
 | ------------- | ------------ | ------------------- | ------------------------- | --------------- | --------- | ----------------------- | ------------- |
 | **Appen**         | Yes      |                 |                       |             |       |                     |           |
 | **ClarifAI**      | Yes      |                 | Yes                   |             |       |                     |           |
