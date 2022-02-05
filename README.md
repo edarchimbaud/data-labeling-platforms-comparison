@@ -59,7 +59,6 @@ The criteria are as follows:
 - DICOM support
 
 
-
 |               | Classif. | Hierarchical classif. | Bounding Box | Polygon | Polyline | Pose estimation | Point   |
 | ------------- | -------------- | --------------------------- | ------------ | ------- | -------- | --------------- | ------- |
 | **Appen**         | ✔        |                         | ✔      | ✔ | ✔  |             | ✔ |
